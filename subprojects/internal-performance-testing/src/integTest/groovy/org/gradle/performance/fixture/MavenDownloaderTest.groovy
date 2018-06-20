@@ -25,7 +25,7 @@ import org.junit.rules.TemporaryFolder
 import spock.lang.Specification
 import spock.lang.Unroll
 
-@Requires([TestPrecondition.ONLINE])
+@Requires([TestPrecondition.ONLINE, TestPrecondition.JDK8_OR_LATER])
 class MavenDownloaderTest extends Specification {
 
     @Rule
